@@ -12,4 +12,5 @@ jobs:
       - uses: AndreasAugustin/actions-template-sync@v2
         with:
           github_token: ${{ secrets.GH_TOKEN_FOR_UPDATES }}
+          pr_commit_msg: Merge template changes
           source_repo_path: NuschtOS/template
