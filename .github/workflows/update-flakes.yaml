@@ -5,6 +5,7 @@ on:
     - cron: '0 0 * * 0'
 jobs:
   update-flakes:
+    if: ${{ hashFiles('flake.nix') != '' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
